@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <com.yalantis.phoenix.PullToRefreshView
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycleView"
+            android:layout_margin="10dp"
+            android:scrollbars="vertical"/>
+    </com.yalantis.phoenix.PullToRefreshView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|right|bottom"
+        android:visibility="gone"
+        android:layout_margin="16dp"
+        android:elevation="6dp"
+        android:src="@mipmap/up"
+        app:borderWidth="0dp"
+        app:layout_anchor="@id/recycleView"
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@color/colorPrimary"/>
+    <ProgressBar
+    android:id="@+id/progressbar"
+    android:layout_gravity="center"
+    android:layout_width="82dp"
+    android:layout_height="82dp"
+    style="?roundAsCircle"
+    />
+</FrameLayout>

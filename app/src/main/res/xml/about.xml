@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/app_name">
+        <Preference
+            android:key = "app_intor"
+            android:title="@string/text_app_intro"/>
+        <Preference
+            android:title="@string/current_version"
+            android:summary="@string/cook2y_vewsion"/>
+        <Preference
+            android:key = "check_update"
+            android:title="@string/check_update"/>
+        <Preference
+            android:key = "share"
+            android:title="@string/share_app"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/author"
+        android:summary="Chen Ti">
+        <Preference
+            android:key = "blog"
+            android:title="@string/blog"
+            android:summary="@string/blog_address"/>
+        <Preference
+            android:title="@string/email"
+            android:summary="@string/email_name"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/copyright">
+        <Preference
+            android:title="@string/data"
+            android:summary="@string/data_desc"/>
+        <Preference
+            android:title="@string/attention"
+            android:summary="@string/attention_desc"/>
+    </PreferenceCategory>
+</PreferenceScreen>
